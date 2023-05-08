@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/css.css">
+
+
+<title>
+Events and Calender 
+
+</title>
+
+
+<style>
+.dropbtn {
+   
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-left:2%;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+li {
+text-align:left;
+}
+
+.month{
+		margin-left:12%;
+}
+</style>
+
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("p").hide();
+  });
+    });
+
+</script>
+
+</head>
+<body>
+
+<!--Start Nav-->
+
+<nav>
+	<a href="../tree/index.html" class="button" accesskey="1"> Home <span class="tiny">Alt-1 </span></a>
+
+	<a href="events.html" class="button" accesskey="2">Events <span class="tiny">Alt-2 </span></a>
+	
+	<a href="about2.html" class="button" accesskey="3">About Us <span class="tiny">Alt-3 </span></a>
+	
+	<a href="images.html" class="button" accesskey="4">Images <span class="tiny">Alt-4 </span></a>
+	
+	<a href="reminder2.html" class="button" accesskey="5">Vision <span class="tiny">Alt-5 </span></a>
+  </nav>
+ <!--End of nav-->
+    
+      <br> <br> <br>   <br> <br> 
+	  
+	<!--Drop Down Selection-->   
+<div class="dropdown">
+  <button class="dropbtn">Countdown Clock</button>
+  <div class="dropdown-content">
+    <a onclick="myFunction()" href="#" accesskey="6"> 10k <span class="tiny"> Alt-6 </span></a>
+    <a onclick="go()" href="#" accesskey="7"> River Cleanup <span class="tiny"> Alt-7 </span></a>
+    <a onclick="wow()" href="#" accesskey="8"> Soup Kitchen <span class="tiny"> Alt-8 </span></a>
+    <a onclick="randomName()" href="#" accesskey="9"> Wags for Mags <span class="tiny"> Alt-9 </span></a>
+    <a onclick="idk()" href="#" accesskey="10"> School Fundraiser <span class="tiny"> Alt-10 </span></a>
+  </div>
+</div>
+
+<!--End Drop Down--> 
+
+<h2 id="demo"> </h2>
+<h2 id="pow"> </h2>  
+<h2 id="po"></h2>
+<h2 id="pope"></h2>
+<h2 id="dfs"></h2>
+<br/>  
+<h1 class="month"> April </h1>
+  
+<div class="calender cal-view" data-component="calender-module">
+    
+<a href="#" class="toggle" accesskey="11">View Events <span class="tiny"> Alt-11 </span></a>
+   
+<!--Start Calender-->
+
+   
+<div class='calender__month'>
+<div class='calender__week'>
+        
+<div class='calender__day--week'>
+   
+       
+<span class="date">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sunday</span>
+        
+</div>
+        
+<div class='calender__day--week'>
+          
+<span class="date">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monday</span>
+        
+</div>
+        
+<div class='calender__day--week'>
+          
+<span class="date">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tuesday</span>
+        
+</div>
+        
+<div class='calender__day--week'>
+          
+<span class="date">&nbsp;&nbsp;Wednesday</span>
+          
+        
+</div>
+        
+<div class='calender__day--week'>
+          
+<span class="date">&nbsp;&nbsp;&nbsp;&nbsp;Thursday</span>
+
+        
+</div>
+        
+<div class='calender__day--week'>
+          
+<span class="date">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Friday</span>
+        
+</div>
+        
+<div class='calender__day--week'>
+         
+ <span class="date">&nbsp;&nbsp;&nbsp;&nbsp;Saturday</span>
+          
+      </div>
+</div>
+      
+<div class='calender__week'>
+        
+<div class='calender__day--hidden'>
+   
+       
+<span class="date">26</span>
+        
+</div>
+        
+<div class='calender__day--hidden'>
+          
+<span class="date">27</span>
+        
+</div>
+        
+<div class='calender__day--hidden'>
+          
+<span class="date">28</span>
+        
+</div>
+        
+<div class='calender__day--hidden'>
+          
+<span class="date">29</span>
+          
+        
+</div>
+        
+<div class='calender__day--hidden'>
+          
+<span class="date">30</span>
+
+        
+</div>
+        
+<div class='calender__day--hidden'>
+          
+<span class="date">31</span>
+        
+</div>
+        
+<div class='calender__day--empty'>
+         
+ <span class="date">01</span>
+          
+      </div>
+</div>
+      
+<div class='calender__week'>
+        
+<div class='calender__day--empty'>
+          
+<span class="date">02</span>
+        </div>
+       
+ <div class='calender__day--empty'>
+          
+<span class="date">03</span>
+          
+          
+        </div>
+        
+<div class='calender__day--empty'>
+          
+<span class="date">04</span>
+          
+        </div>
+        
+<div class='calender__day--empty'>
+          
+<span class="date">05</span>
+          
+        </div>
+        
+<div class='calender__day--empty'>
+          
+<span class="date">06</span>
+          
+        </div>
+        
+<div class='calender__day--empty'>
+          
+<span class="date">07</span>
+        </div>
+        
+<div class='calender__day--empty'>
+          
+<span class="date">08</span>
+        </div>
+      </div>
+      
+<div class='calender__week'>
+        
+<div class='calender__day'>
+          
+<span class="date">09</span>
+          <div class="event-list">
+            
+<div class="event-list__event">
+              
+<a href="#">10k</a>
+            </div>
+            
+            
+
+          </div>
+        
+        </div>
+        
+<div class='calender__day--empty'>
+          
+<span class="date">10</span>
+        </div>
+        
+<div class='calender__day--empty'>
+          
+<span class="date">11</span>
+          
+
+        </div>
+        
+<div class='calender__day--empty'>
+          
+<span class="date">12</span>
+          
+        </div>
+        
+<div class='calender__day'>
+          
+<span class="date">13</span>
+          
+<div class="event-list">
+            
+<div class="event-list__event">
+              
+<a href="#"> River Cleanup </a>
+            </div>
+            
+            
+
+          </div>
+        </div>
+        
+<div class='calender__day--empty'>
+          
+<span class="date">14</span>
+        </div>
+        
+<div class='calender__day--empty'>
+          
+<span class="date">15</span>
+          
+        </div>
+      </div>
+      
+<div class='calender__week'>
+        
+<div class='calender__day'>
+          
+<span class="date">16</span>
+<div class="event-list">
+            
+        <div class="event-list__event">
+                      
+        <a href="#">Soup Kitchen</a>
+                    </div>
+                    
+                    
+        
+                  </div>
+                
+        </div>
+        
+<div class='calender__day--empty'>
+          
+<span class="date">17</span>
+          
+        </div>
+        
+<div class='calender__day--empty'>
+          
+<span class="date">18</span>
+          
+        </div>
+        
+<div class='calender__day--empty'>
+          
+<span class="date">19</span>
+          
+        </div>
+        
+<div class='calender__day--empty'>
+          
+<span class="date">20</span>
+          
+        </div>
+        
+<div class='calender__day--empty'>
+          
+<span class="date">21</span>
+        </div>
+        
+<div class='calender__day--empty'>
+          
+<span class="date">22</span>
+        </div>
+      </div>
+      
+<div class='calender__week'>
+        
+<div class='calender__day--empty'>
+          
+<span class="date">23</span>
+          
+        </div>
+        
+<div class='calender__day--empty'>
+          
+<span class="date">24</span>
+          
+        </div>
+        
+<div class='calender__day'>
+          
+<span class="date">25</span>
+<br/>
+<div class="event-list">
+            
+        <div class="event-list__event">
+                      
+        <a href="#">Wags for Mags</a>
+                    </div>
+                    
+                    
+        
+                  </div>
+        </div>
+        
+<div class='calender__day--empty'>
+          
+<span class="date">26</span>
+          
+        </div>
+        
+<div class='calender__day--empty'>
+          
+<span class="date">27</span>
+        </div>
+        
+<div class='calender__day--empty'>
+          
+<span class="date">28</span>
+        </div>
+        
+<div class='calender__day'>
+          
+<span class="date">29</span>
+<br/>
+<div class="event-list">
+            
+        <div class="event-list__event">
+                      
+        <a href="#">School Fundraiser</a>
+                    </div>
+                    
+                    
+        
+                  </div>
+        </div>
+</div>
+<div class='calender__week'>
+<div class='calender__day--empty'>
+          
+<span class="date">30</span>
+        </div>
+<div class='calender__day--hidden'>
+          
+<span class="date">01</span>
+        </div><div class='calender__day--hidden'>
+          
+<span class="date">02</span>
+        </div><div class='calender__day--hidden'>
+          
+<span class="date">03</span>
+        </div><div class='calender__day--hidden'>
+          
+<span class="date">04</span>
+       
+      </div>
+<div class='calender__day--hidden'>
+          
+<span class="date">05</span>
+       
+      </div>
+<div class='calender__day--hidden'>
+          
+<span class="date">06</span>
+       
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <!--End Calender--> 
+
+
+    
+<script  src="../javascript/index.js"></script>
+
+
+
+  
+
+
+<script>
+function myFunction() {
+var countDownDate = new Date("Apr 09, 2023 09:00:00").getTime();
+
+
+var x = setInterval(function() {
+
+  
+  var now = new Date().getTime();
+    
+  
+  var distance = countDownDate - now;
+    
+  
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  
+  document.getElementById("demo").innerHTML = "10k: " + days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+  }
+
+
+
+  function go() {
+
+var countDownDate = new Date("Apr 16, 2023 8:00:00").getTime();
+
+
+var x = setInterval(function() {
+
+ 
+
+  var now = new Date().getTime();
+    
+  
+  var distance = countDownDate - now;
+    
+  
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+ 
+  document.getElementById("pow").innerHTML = "River Cleanup: " + days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("pow").innerHTML = "EXPIRED";
+  }
+}, 1000);
+  }
+
+  function wow() {
+
+var countDownDate = new Date("Apr 16, 2023 8:00:00").getTime();
+
+
+var x = setInterval(function() {
+
+ 
+  var now = new Date().getTime();
+    
+  
+  var distance = countDownDate - now;
+    
+  
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+ 
+  document.getElementById("po").innerHTML = "Soup Kitchen: " + days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("po").innerHTML = "EXPIRED";
+  }
+}, 1000);
+  }
+
+  function randomName() {
+
+var countDownDate = new Date("Apr 25, 2023 10:00:00").getTime();
+
+
+var x = setInterval(function() {
+
+ 
+  var now = new Date().getTime();
+    
+  
+  var distance = countDownDate - now;
+    
+  
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+ 
+  document.getElementById("pope").innerHTML = "Wags for Mags: " + days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("pope").innerHTML = "EXPIRED";
+  }
+}, 1000);
+  }
+
+  function idk() {
+
+var countDownDate = new Date("Apr 29, 2023 8:00:00").getTime();
+
+
+var x = setInterval(function() {
+
+ 
+  var now = new Date().getTime();
+    
+  
+  var distance = countDownDate - now;
+    
+  
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+ 
+  document.getElementById("dfs").innerHTML = "School Fundraiser: " + days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("dfs").innerHTML = "EXPIRED";
+  }
+}, 1000);
+  }
+</script>
+<br>
+<br>
+ <footer>
+        <h5> &copy;	Peoria Volunteering </h5>   
+    </footer>
+</body>
+</html>

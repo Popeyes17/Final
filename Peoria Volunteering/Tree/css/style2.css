@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+    background: #e1ebde;
+}
+
+.tree {
+  fill: #b68000;
+  height: 100vh;
+  left: calc(50% - 50vh);
+  position: relative;
+  width: 100vh;
+}
+
+.leaf {
+  fill: #009100;
+  opacity: 0;
+}

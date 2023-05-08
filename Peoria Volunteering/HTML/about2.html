@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>
+About
+</title>
+ <link rel="stylesheet" href="../css/css.css" type="text/css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<!--Markels Website-->
+
+<script>
+
+
+$(document).ready(function() {
+  $('#button').click(function() {
+    $('#hide').toggle();
+  })
+ 
+  }); 
+    
+$(document).ready(function(){
+  $("#button2").click(function(){
+    $("#hide2").toggle();
+  });
+});
+    
+      
+$(document).ready(function(){
+  $("#button3").click(function(){
+    $("#hide3").toggle();
+  });
+});
+
+    
+    
+$(document).ready(function(){
+  $("#button4").click(function(){
+    $("#hide4").toggle();
+  });
+});
+
+ $(document).ready(function(){
+  $("#button5").click(function(){
+    $("#hide5").toggle();
+  });
+});  
+   
+ 
+
+function codeFunction() {
+  document.getElementById("code").innerHTML = "kwzu8h ";
+}
+    
+  
+
+
+</script>
+
+<style>
+
+
+
+#hide{
+  display:none;
+  margin-left:1%;
+  
+  
+}
+
+#button1{
+margin-left:2%;
+
+}
+
+
+    
+    
+#hide2{
+  display:none;
+  margin-left:1%
+}
+
+#button2{
+margin-left:2%;
+
+}
+
+#hide3{
+  display:none;
+  margin-left:1%
+}
+
+#button3{
+margin-left:2%;
+
+}
+
+#hide4{
+  display:none;
+  margin-left:1%;
+}
+
+#button4{
+margin-left:2%;
+
+}
+    
+    #hide5{
+  display:none;
+  margin-left:1%;
+}
+
+#button5{
+margin-left:2%;
+    }
+    
+.name{
+    width:70%;
+    margin-bottom:5%;
+    }
+    
+.email{
+    width:70%;
+    margin-bottom:5%;
+    
+    }
+    
+ .subject{
+     width:68%;
+    }
+    
+.comment{
+    width:80%;
+    height:40vh;
+    
+    }
+
+#classroom{
+
+border: 5px solid#048c3e;
+  border-radius: 1px;
+}
+
+#map{
+
+border: 5px solid#048c3e;
+  border-radius: 1px;
+}
+
+.about1{
+
+border: 5px solid#048c3e;
+  border-radius: 1px;
+}
+
+#blank{
+width:60%;
+}
+
+    
+</style>
+
+</head>
+
+<body>
+
+<!--Nav bar section-->
+<nav>
+	<a href="../tree/index.html" class="button" accesskey="1"> Home <span class="tiny">Alt-1 </span></a>
+
+	<a href="events.html" class="button" accesskey="2">Events <span class="tiny">Alt-2 </span></a>
+	
+	<a href="about2.html" class="button" accesskey="3">About Us <span class="tiny">Alt-3 </span></a>
+	
+	<a href="images.html" class="button" accesskey="4">Images <span class="tiny">Alt-4 </span></a>
+	
+	<a href="reminder2.html" class="button" accesskey="5">Vision <span class="tiny">Alt-5 </span></a>
+  </nav>
+ <!--End of nav-->
+    
+      <br> <br> <br>   <br> <br> 
+   
+
+    
+<aside id="classroom">     
+   <h3> Missed an event? Click here to get the latest updates
+    </h3>
+     <br>  
+    <button onclick="codeFunction()" accesskey="q">Click Here <span class="tiny"> Alt-q </span> </button>
+ <br>
+  <br> 
+<p id="code"></p>
+
+    </aside> 
+    
+<aside id="map">
+    <h3> Where to find us </h3>
+    <br>
+	<div id="hide5">
+        <p> All events are in the peoria area </p>
+        <br>
+<img src="../images/Map.jpg" alt="Map" id="mapimg">
+        
+</div>
+    
+     <button id="button5" accesskey="6">Click Here <span class="tiny"> Alt-6 </span> </button>
+    </aside> 
+
+
+<div class="about1" > 
+
+<aside class="about2">
+<img src="../images/profile.png" id="profile1" alt="Profile" title="Profile" style="height:150px;">
+ </aside>
+ 
+ 
+<article>
+    <h3> Creator 1 </h3>
+<p> <em>Lorem Ipsum</em>
+<br> 
+Lorem ipsum dolor sit amet. Qui animi laboriosam qui delectus quia est aliquam quod qui inventore voluptatibus. Est quis debitis ut sunt omnis est harum voluptas et quia voluptas non voluptatem earum. Aut animi ipsum sed asperiores cumque est animi explicabo aut iusto impedit vel quia repellat. Sed ipsa ducimus ut internos praesentium est ipsa iusto cum repellat atque sit quas rerum.
+<br>
+<br>
+
+If you have any events you want posted or any questions submit an email below.
+<br>
+<br>
+<strong>Email: </strong> mvenson@mail.bradley.edu
+<br>
+
+
+</p>
+
+<br>
+<div id="hide">
+<form action="mailto:mvenson@mail.bradley.edu" method="post" enctype="text/plain" >
+    
+    <fieldset>
+
+Name: <input type="text" name="Name" class="name" required>
+<br>
+Email: <input type="text" name="Email" class="email" required>
+<br>
+Subject: <input type="text" name="Name" class="subject" required>
+
+<br>
+<br>
+<textarea name="comment" onclick="reason(this.value)" class="comment"> Type Email ... </textarea>
+<br>
+<br>
+<button type="reset" value="Reset">Reset</button>
+
+<input type="submit" name="submit" value="Submit">
+        
+            </fieldset>
+
+</form> 
+<br>
+</div>
+<br>
+
+<button id="button" accesskey="7" onClick="box()"> Click here to email <span class="tiny"> Alt-7 </span></button>
+
+
+</article> 
+</div>
+
+
+
+<div class="about1" id="div2"> 
+
+<aside class="about2">
+<img src="../images/profile.png" id="profile2" alt="Profile" title="Profile" style="height:150px;">
+ </aside>
+ 
+ 
+<article>
+    <h3> Creator 2 </h3>
+
+<p> <em>Lorem Ipsum</em>
+<br> 
+Lorem ipsum dolor sit amet. Qui animi laboriosam qui delectus quia est aliquam quod qui inventore voluptatibus. Est quis debitis ut sunt omnis est harum voluptas et quia voluptas non voluptatem earum. Aut animi ipsum sed asperiores cumque est animi explicabo aut iusto impedit vel quia repellat. Sed ipsa ducimus ut internos praesentium est ipsa iusto cum repellat atque sit quas rerum.
+<br>
+<br>
+
+If you have any events you want posted or any questions submit an email below.
+<br>
+<br>
+<strong>Email: </strong> mvenson@mail.bradley.edu
+<br>
+
+
+</p>
+<br>
+
+
+<div id="hide2">
+<form action="mailto:mvenson@mail.bradley.edu" method="post" enctype="text/plain" >
+
+        <fieldset>
+
+Name: <input type="text" name="Name" class="name" required>
+<br>
+Email: <input type="text" name="Email" class="email" required>
+<br>
+Subject: <input type="text" name="Name" class="subject" required>
+
+<br>
+<br>
+<textarea name="comment" onclick="reason(this.value)" class="comment"> Type Email ... </textarea>
+<br>
+<br>
+<button type="reset" value="Reset">Reset</button>
+
+<input type="submit" name="submit" value="Submit">
+                </fieldset>
+
+</form> 
+<br>
+</div>
+<br>
+    
+<button id="button2" accesskey="8"> Click here to email <span class="tiny"> Alt-8 </span></button>
+
+</article> 
+</div>
+    
+	
+    <br>
+    <br>
+    <br>
+<div class="about1"> 
+
+<aside class="about2">
+<img src="../images/profile.png" id="profile3" alt="Profile" title="Profile" style="height:150px;">
+ </aside>
+ 
+ 
+<article>
+    <h3> Creator 3 </h3>
+
+<p> <em>Lorem Ipsum</em>
+<br> 
+Lorem ipsum dolor sit amet. Qui animi laboriosam qui delectus quia est aliquam quod qui inventore voluptatibus. Est quis debitis ut sunt omnis est harum voluptas et quia voluptas non voluptatem earum. Aut animi ipsum sed asperiores cumque est animi explicabo aut iusto impedit vel quia repellat. Sed ipsa ducimus ut internos praesentium est ipsa iusto cum repellat atque sit quas rerum.
+<br>
+<br>
+
+
+If you have any events you want posted or any questions submit an email below.
+<br>
+<br>
+<strong>Email: </strong> mvenson@mail.bradley.edu
+<br>  
+
+
+</p>
+<br>
+
+<div id="hide3">
+<form action="mailto:mvenson@mail.bradley.edu" method="post" enctype="text/plain" >
+        
+    <fieldset>
+
+Name: <input type="text" name="Name" class="name" required>
+<br>
+Email: <input type="text" name="Email" class="email" required>
+<br>
+Subject: <input type="text" name="Name" class="subject" required>
+
+<br>
+<br>
+<textarea name="comment" onclick="reason(this.value)" class="comment"> Type Email ... </textarea>
+<br>
+<br>
+<button type="reset" value="Reset">Reset</button>
+
+<input type="submit" name="submit" value="Submit">
+            </fieldset>
+
+</form> 
+<br>
+</div>
+<br>
+<br>
+
+<button id="button3" accesskey="9">Click here to email <span class="tiny"> Alt-9 </span></button>
+
+
+</article> 
+</div>
+
+
+
+<div class="about1"> 
+
+<aside class="about2">
+<img src="../images/profile.png" id="profile4" alt="Profile" title="Profile" style="height:150px; width:150px;">
+ </aside>
+ 
+ 
+<article>
+    <h3> Creator 4 </h3>
+
+<p> <em>Lorem Ipsum</em>
+<br> 
+Lorem ipsum dolor sit amet. Qui animi laboriosam qui delectus quia est aliquam quod qui inventore voluptatibus. Est quis debitis ut sunt omnis est harum voluptas et quia voluptas non voluptatem earum. Aut animi ipsum sed asperiores cumque est animi explicabo aut iusto impedit vel quia repellat. Sed ipsa ducimus ut internos praesentium est ipsa iusto cum repellat atque sit quas rerum.
+<br>
+<br>
+If you have any events you want posted or any questions submit an email below. 
+<br>
+<br>
+<strong>Email:</strong> mvenson@mail.bradley.edu
+
+</p>
+
+
+<div id="hide4">
+<form action="mailto:mvenson@mail.bradley.edu" method="post" enctype="text/plain" >
+
+        <fieldset>
+
+Name: <input type="text" name="Name" class="name" required>
+<br>
+Email: <input type="text" name="Email" class="email" required>
+<br>
+Subject: <input type="text" name="Name" class="subject" required>
+
+<br>
+<br>
+<textarea name="comment" onclick="reason(this.value)" class="comment"> Type Email ... </textarea>
+<br>
+<br>
+<button type="reset" value="Reset">Reset</button>
+
+<input type="submit" name="submit" value="Submit">
+                </fieldset>
+
+</form> 
+<br>
+</div>
+<br>
+<br>
+  <br>
+
+<button id="button4" accesskey="0">Click here to email <span class="tiny"> Alt-0 </span></button>
+
+</article> 
+</div>
+
+<!--Start Footer-->
+<footer style="margin-top: 85%;">
+  <h5> &copy;	Peoria Volunteering </h5>   
+</footer>
+
+  <!--End Footer-->
+
+
+
+</body>
+</html>
+
+
+
